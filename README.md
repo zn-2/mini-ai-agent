@@ -1,21 +1,23 @@
 # mini-ai-agent
 
-## GitHub Models Agent
-This project calls a single LLM agent via LangChain and GitHub Models using a simple query through a custom ask() function that returns a response to the user.
+## 📘 GitHub Models Agent
+This project calls a single LLM agent via LangChain and GitHub Models using a simple query through a custom `ask()` function that returns a response to the user.
 
-## Features
-Straightforward structure
 
-agent.py contains the LLM agent
+## ✨ Features
+- Straightforward structure
 
-main.py calls the agent with a query
+- `agent.py` contains the LLM agent
 
-Uses GitHub Models
+- `main.py` calls the agent with a query
 
-Custom ask() function for querying the model and returning a user‑friendly response
+- Uses GitHub Models
 
-## Project Structure
-Code
+- Custom `ask()` function for querying the model and returning a user‑friendly response
+
+
+## 📂 Project Structure
+```python
 mini-ai-agent/
 │
 ├── src/
@@ -25,32 +27,43 @@ mini-ai-agent/
 ├── main.py           # Querying the model
 ├── requirements.txt
 └── .gitignore
+```
 
-## Getting Started
-1. Install dependencies
-Code
+
+## 🚀 Getting Started
+**1. Install all dependencies**
+```python
 pip install -r requirements.txt
-2. Create a .env file
-Code
-GITHUB_TOKEN=your_token_here
-3. Run the query script
-Code
+```
+**2. Create a `.env` file**
+
+Add your GitHub token here:
+```python
+GITHUB_TOKEN=your_token
+```
+**3. Run the query script**
+```python
 python main.py
+```
+**4. (Optional) Edit query & model**
+- In `main.py` you can change the question sent to the model by updating the string.
 
-## How It Works
-The ask() function in src/agent.py:
+- In `agent.py` you can change to any compatible GitHub model by updating the `model` parameter in the `ChatOpenAI` function.
 
-loads your GitHub Models API key
 
-initializes the model
+## 🧠 How It Works
+The `ask()` function in `src/agent.py`:
 
-sends a query
+- loads your GitHub Models API key
 
-receives the response
+- initializes the model
 
-returns it in a user‑friendly format
+- sends a query
 
-This keeps the interface simple and easy to understand.
+- receives the response
 
-## License
+- returns it in a user‑friendly format
+
+
+## 📄 License
 MIT
