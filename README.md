@@ -1,41 +1,40 @@
 # mini-ai-agent
 
-📘 GitHub Models Agent 
-This project calls a single LLM agent via Langchain and Github Models with a simple query via a custom ask() function that returns a response to the user.  
+📘 GitHub Models Agent
+This project calls a single LLM agent via LangChain and GitHub Models using a simple query through a custom ask() function that returns a response to the user.
 
 ✨ Features
-Straight forward structure
+Straightforward structure
 
 agent.py contains the LLM agent
 
-main.py is used to call the agent with a query. 
+main.py calls the agent with a query
 
-Uses GitHub Models 
+Uses GitHub Models
 
-Custom ask() function for querying the model & returning a user friendly response. 
-
+Custom ask() function for querying the model and returning a user‑friendly response
 
 📂 Project Structure
 Code
 mini-ai-agent/
 │
 ├── src/
-│   ├── agent.py        # LLM & ask() function
+│   ├── agent.py      # LLM & ask() function
 │   ├── __init__.py
 │
-├── main.py             # Querying model
+├── main.py           # Querying the model
 ├── requirements.txt
 └── .gitignore
 🚀 Getting Started
-Step 1 - Install all dependencies
+1. Install dependencies
 Code
 pip install -r requirements.txt
-2. .env 
-Create an .env file for your github token. 
+2. Create a .env file
+Add your GitHub token:
 
 Code
 GITHUB_TOKEN=your_token_here
-3. Run main.py (query script)
+3. Run the query script
 Code
 python main.py
 🧠 How It Works
@@ -47,17 +46,11 @@ initializes the model
 
 sends a query
 
-returns the model’s response
-
-This keeps the interface simple and easy to understand.
-
-The ask() function in src/agent.py: 
-
-calls the initialised LLM model agent
-
 receives the response
 
-and returns it in a user friendly format 
+returns it in a user‑friendly format
+
+This keeps the interface simple and easy to understand.
 
 📄 License
 MIT
