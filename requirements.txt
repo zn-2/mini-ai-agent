@@ -1,0 +1,4 @@
+python-dotenv # to use .env file 
+langchain-openai
+
+
